@@ -204,7 +204,7 @@ function init_resource(){
             }
         }
         var sub_ae_parent_path = conf.ae.parent + '/' + conf.ae.name;
-        var sub_body = {nu:['mqtt://' + conf.cse.host +'/'+ conf.ae.id + '?ct=json']};
+        var sub_body = {nu:['mqtt://' + conf.cse.host +':'+conf.cse.port+'/'+ conf.ae.id + '?ct=json']};
         var sub_obj = {
             'm2m:sub':
             {
